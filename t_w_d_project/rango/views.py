@@ -8,5 +8,6 @@ def index(request):
 	#	"Rango says hello pals! <br/> <a href='/rango/about'>About</a>")
 
 def about(request):
-	return HttpResponse(
-		"Rango says what about me? <br/> <a href='/rango/index'>Index</a>")
+	#return HttpResponse(
+	#	"Rango says what about me? <br/> <a href='/rango/index'>Index</a>")
+	return render(request, 'rango/about.html')
